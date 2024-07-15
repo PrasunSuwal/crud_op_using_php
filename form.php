@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-    include_once "nav.php";
+    
     session_start();
 
     function data($key)
