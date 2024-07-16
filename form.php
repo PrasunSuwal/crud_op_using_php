@@ -26,6 +26,9 @@
             return '';
         }
     }
+    if (!isset($_SESSION['edit_user'])) {
+        unset($_SESSION['edit_user']);
+    }
 
     ?>
     <div class="container mt-5">
