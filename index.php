@@ -10,6 +10,10 @@
   <div class="container mt-5">
     <?php
       session_start();
+      if(isset($_SESSION['edit_user'])){
+        unset($_SESSION['edit_user']);
+      }
+      
       if (isset($_SESSION['success'])) { ?>
         <div class="alert alert-success alert-dismissible fade show" id="alert" role="alert">
           <?php echo $_SESSION['success']; ?>
